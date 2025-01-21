@@ -6,13 +6,34 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		658D2FFF2D3F7CC0002839C1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 658D2FFE2D3F7CC0002839C1 /* FirebaseAnalytics */; };
+		658D30012D3F7CC0002839C1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 658D30002D3F7CC0002839C1 /* FirebaseAuth */; };
+		658D30032D3F7CC0002839C1 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 658D30022D3F7CC0002839C1 /* FirebaseDatabase */; };
+		658D30262D3FA283002839C1 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 658D30252D3FA283002839C1 /* GoogleSignIn */; };
+		658D30282D3FA283002839C1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 658D30272D3FA283002839C1 /* GoogleSignInSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		658D2FD82D3CF7D2002839C1 /* LazyBuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyBuster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		658D302C2D3FA490002839C1 /* Exceptions for "LazyBuster" folder in "LazyBuster" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 658D2FD72D3CF7D2002839C1 /* LazyBuster */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		658D2FDA2D3CF7D2002839C1 /* LazyBuster */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				658D302C2D3FA490002839C1 /* Exceptions for "LazyBuster" folder in "LazyBuster" target */,
+			);
 			path = LazyBuster;
 			sourceTree = "<group>";
 		};
@@ -23,6 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658D30282D3FA283002839C1 /* GoogleSignInSwift in Frameworks */,
+				658D30032D3F7CC0002839C1 /* FirebaseDatabase in Frameworks */,
+				658D30262D3FA283002839C1 /* GoogleSignIn in Frameworks */,
+				658D2FFF2D3F7CC0002839C1 /* FirebaseAnalytics in Frameworks */,
+				658D30012D3F7CC0002839C1 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				658D2FDA2D3CF7D2002839C1 /* LazyBuster */,
+				658D30232D3F9AC4002839C1 /* Frameworks */,
 				658D2FD92D3CF7D2002839C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +70,13 @@
 				658D2FD82D3CF7D2002839C1 /* LazyBuster.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		658D30232D3F9AC4002839C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +99,11 @@
 			);
 			name = LazyBuster;
 			packageProductDependencies = (
+				658D2FFE2D3F7CC0002839C1 /* FirebaseAnalytics */,
+				658D30002D3F7CC0002839C1 /* FirebaseAuth */,
+				658D30022D3F7CC0002839C1 /* FirebaseDatabase */,
+				658D30252D3FA283002839C1 /* GoogleSignIn */,
+				658D30272D3FA283002839C1 /* GoogleSignInSwift */,
 			);
 			productName = LazyBuster;
 			productReference = 658D2FD82D3CF7D2002839C1 /* LazyBuster.app */;
@@ -94,6 +133,10 @@
 			);
 			mainGroup = 658D2FCF2D3CF7D2002839C1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				658D2FFD2D3F7CC0002839C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				658D30242D3FA283002839C1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 658D2FD92D3CF7D2002839C1 /* Products */;
 			projectDirPath = "";
@@ -255,6 +298,7 @@
 				DEVELOPMENT_TEAM = YGVV8J729Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LazyBuster/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -265,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.LazyBuster.LazyBuster;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LazyBuster.VisualLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -284,6 +328,7 @@
 				DEVELOPMENT_TEAM = YGVV8J729Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LazyBuster/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -294,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.LazyBuster.LazyBuster;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LazyBuster.VisualLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -324,6 +369,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		658D2FFD2D3F7CC0002839C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.7.0;
+			};
+		};
+		658D30242D3FA283002839C1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		658D2FFE2D3F7CC0002839C1 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658D2FFD2D3F7CC0002839C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		658D30002D3F7CC0002839C1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658D2FFD2D3F7CC0002839C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		658D30022D3F7CC0002839C1 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658D2FFD2D3F7CC0002839C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		658D30252D3FA283002839C1 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658D30242D3FA283002839C1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		658D30272D3FA283002839C1 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658D30242D3FA283002839C1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 658D2FD02D3CF7D2002839C1 /* Project object */;
 }
