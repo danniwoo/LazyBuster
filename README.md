@@ -1,0 +1,1 @@
+LazyBuster isn’t just another productivity app. It’s a personalized, AI-driven system that understands your tasks, guides you with actionable plans, and helps users overcome procrastination in a way that feels natural and supportive.
